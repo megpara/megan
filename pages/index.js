@@ -1,4 +1,6 @@
 import Layout from "../components/Layout";
+import Nav from "../components/Nav";
+import Sites from "../components/Sites";
 import styles from "../styles/Home.module.css";
 
 const sites = [
@@ -6,64 +8,52 @@ const sites = [
     title: "Volta Collective",
     link: "https://www.voltacollective.com",
     thumbnail: "/voltacollective.png",
+    location: "Los Angeles, CA",
   },
   {
     title: "Gabrielle Johnson Yoga",
     link: "https://www.gabriellejohnsonyoga.com",
     thumbnail: "/gjyoga.png",
+    location: "Nashville, TN",
   },
   {
     title: "Media Forge",
     link: "https://www.mediaforgepro.com",
     thumbnail: "/mediaforge.png",
+    location: "Los Angeles, CA",
   },
   {
     title: "Catherine Parenteau",
     link: "https://catherineparenteau.com",
     thumbnail: "/catherineparenteau.png",
+    location: "Naples, FL",
   },
 ];
 export default function Home() {
   return (
     <Layout>
       <main className={styles.main}>
-        <div className={styles.nav}>
-          <a
-            className={styles.emailIcon}
-            href="mailto:meganparadowski@gmail.com"
-          >
-            <img src="/email_icon_white.png" />
-          </a>
-          <div className={styles.navItem}>
-            <a href="/about">About</a>
-          </div>
-          <div className={styles.navItem}>
-            <a href="/work">Work</a>
-          </div>
-        </div>
+        <Nav />
         <div className={styles.titleDiv}>
-          <div className={`${styles.title} ${styles.duplicateTitle}`}>
+          <div className={`${styles.primaryTitle} ${styles.duplicateTitle}`}>
             Megan Paradowski
           </div>
-          <div className={`${styles.subtitle} ${styles.duplicateSubtitle}`}>
+          <div
+            className={`${styles.secondaryTitle} ${styles.duplicateSubtitle}`}
+          >
             Web developer
           </div>
           <div className={styles.circle} />
-          <div className={styles.title}>Megan Paradowski</div>
-          <div className={styles.subtitle}>Web Developer</div>
+          <div className={styles.primaryTitle}>Megan Paradowski</div>
+          <div className={styles.secondaryTitle}>Web Designer / Developer</div>
         </div>
-        <div className={styles.sites}>
-          <div className={styles.siteList}>
-            {sites.map((site) => (
-              <div className={styles.listItem} key={site.title}>
-                <a href={site.link} target="_blank">
-                  <img className={styles.thumbnail} src={site.thumbnail} />
-                  <div className={styles.siteTitle}>{site.title}</div>
-                </a>
-              </div>
-            ))}
-          </div>
+        <div className={`${styles.primaryTitle} ${styles.listTitle}`}>
+          Sites
         </div>
+        <div className={`${styles.secondaryTitle} ${styles.scroll}`}>
+          (scroll)
+        </div>
+        <Sites />
       </main>
     </Layout>
   );

@@ -1,0 +1,26 @@
+.nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 2rem;
+  }
+  .navItem {
+    font-family: "hero-new-hairline", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-transform: lowercase;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin-left: 2rem;
+    display: inline;
+  }
+  .navItem:hover {
+    font-weight: bold;
+  }
+  .emailIcon {
+    position: inherit;
+    right: 2rem;
+  }
+  .emailIcon img {
+    width: 28px;
+  }

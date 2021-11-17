@@ -1,0 +1,48 @@
+.sites {
+  margin: auto;
+  width: 100%;
+}
+.siteList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.siteText {
+  margin: 15px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.7rem;
+}
+.siteTitle {
+  font-size: 1rem;
+}
+.siteLocation {
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.listItem {
+  background-color: white;
+  border-radius: 20px;
+  flex: 0 0 45%;
+  margin: 20px;
+  z-index: 2;
+}
+.thumbnail {
+  width: 100%;
+}
+.linkIcon {
+  width: 30px;
+  position: absolute;
+  margin: 25px 0 0 40%;
+  display: none;
+  z-index: 2;
+}
+.listItem:hover .linkIcon {
+  display: unset;
+}
+.listItem:hover .thumbnail {
+  filter: brightness(0.7);
+}
