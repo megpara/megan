@@ -5,36 +5,30 @@
 }
 .titleDiv {
   width: 100%;
-  height: 85%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.emailIcon {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  width: 25px;
-}
 .title {
   font-size: 5rem;
   line-height: 7rem;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
   font-family: "jeanne-moderno-ultra", sans-serif;
   font-weight: 800;
   font-style: normal;
   position: relative;
   text-align: center;
 }
-.normalText {
+.siteTitle {
   font-family: "hero-new-hairline", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   padding: 15px;
 }
 .subtitle {
@@ -43,7 +37,7 @@
   font-family: "hero-new-hairline", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   letter-spacing: 5px;
 }
@@ -53,60 +47,54 @@
   background-color: white;
   border-radius: 50%;
   position: absolute;
+  z-index: -1;
+  filter: blur(3px);
 }
 .sites {
   margin: auto;
   width: 100%;
 }
-.sitesTitle {
-  z-index: 1;
-  text-transform: lowercase;
-  font-family: "hero-new-hairline", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 1.5rem;
-  text-align: left;
-  letter-spacing: 5px;
-  margin-left: 2rem;
-}
 .siteList {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 .listItem {
   background-color: white;
-  flex: 0 0 30%;
+  flex: 0 0 45%;
   margin: 20px;
   z-index: 2;
 }
 .thumbnail {
   width: 100%;
 }
-
-/* .nav {
-  position: absolute;
+.nav {
   width: 100%;
   height: 100%;
+  position: absolute;
+  padding-top: 2rem;
+}
+.emailIcon {
+  position: inherit;
+  right: 2rem;
+}
+.emailIcon img {
+  width: 25px
 }
 .navItem {
   font-family: "hero-new-hairline", sans-serif;
   font-weight: 100;
   font-style: normal;
   text-transform: lowercase;
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  margin-left: 2rem;
+  display: inline;
 }
-.rightNav {
-  position: inherit;
-  right: 2rem;
-  top: 50%;
+.navItem:hover {
+  font-weight: bold;
 }
-.bottomNav {
-  position: inherit;
-  text-align: center;
-  bottom: 2rem;
-} */
 @media (max-width: 600px) {
 }

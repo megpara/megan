@@ -27,27 +27,32 @@ export default function Home() {
   return (
     <Layout>
       <main className={styles.main}>
-        {/* <div className={styles.nav}>
-          <div className={`${styles.navItem} ${styles.topNav}`}>Work</div>
-          <div className={`${styles.navItem} ${styles.rightNav}`}>About</div>
-          <div className={`${styles.navItem} ${styles.bottomNav}`}>
-            Get in touch
+        <div className={styles.nav}>
+          <a
+            className={styles.emailIcon}
+            href="mailto:meganparadowski@gmail.com"
+          >
+            <img src="/email_icon.png" />
+          </a>
+          <div className={styles.navItem}>
+            <a href="/about">About</a>
           </div>
-        </div> */}
-        <img className={styles.emailIcon} src="/email_icon.png" />
+          <div className={styles.navItem}>
+            <a href="/work">Work</a>
+          </div>
+        </div>
         <div className={styles.titleDiv}>
           <div className={styles.circle} />
           <div className={styles.title}>Megan Paradowski</div>
           <div className={styles.subtitle}>Web Developer</div>
         </div>
         <div className={styles.sites}>
-          <div className={styles.sitesTitle}>Sites</div>
           <div className={styles.siteList}>
             {sites.map((site) => (
               <div className={styles.listItem} key={site.title}>
                 <a href={site.link} target="_blank">
                   <img className={styles.thumbnail} src={site.thumbnail} />
-                  <div className={styles.normalText}>{site.title}</div>
+                  <div className={styles.siteTitle}>{site.title}</div>
                 </a>
               </div>
             ))}
