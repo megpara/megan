@@ -34,25 +34,17 @@ export default function Home() {
     <Layout>
       <main className={styles.main}>
         <Nav />
+        {/* <div className={styles.scrollContainer}>
+          <div className={`${styles.secondaryTitle} ${styles.scroll}`}>
+            (scroll)
+          </div>
+        </div> */}
         <div className={styles.titleDiv}>
-          <div className={`${styles.primaryTitle} ${styles.duplicateTitle}`}>
-            Megan Paradowski
-          </div>
-          <div
-            className={`${styles.secondaryTitle} ${styles.duplicateSubtitle}`}
-          >
-            Web developer
-          </div>
           <div className={styles.circle} />
           <div className={styles.primaryTitle}>Megan Paradowski</div>
           <div className={styles.secondaryTitle}>Web Designer / Developer</div>
         </div>
-        <div className={`${styles.primaryTitle} ${styles.listTitle}`}>
-          Sites
-        </div>
-        <div className={`${styles.secondaryTitle} ${styles.scroll}`}>
-          (scroll)
-        </div>
+
         <Sites />
       </main>
     </Layout>
