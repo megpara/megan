@@ -14,22 +14,13 @@
 .title {
   font-size: 5rem;
   line-height: 7rem;
-  /* text-transform: lowercase; */
   font-family: "jeanne-moderno-ultra", sans-serif;
   font-weight: 800;
   font-style: normal;
   position: relative;
   text-align: center;
-}
-.siteTitle {
-  font-family: "hero-new-hairline", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 1.2rem;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  padding: 15px;
+  color: white;
+  z-index: -1;
 }
 .subtitle {
   z-index: 1;
@@ -40,15 +31,28 @@
   font-size: 1.3rem;
   text-align: center;
   letter-spacing: 5px;
+  color: white
+  /* filter: blur(1px); */
 }
 .circle {
   width: 550px;
   height: 550px;
-  background-color: white;
+  background-color: #eb77049c;
   border-radius: 50%;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   filter: blur(3px);
+}
+.duplicateTitle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  filter: blur(1px);
+}
+.duplicateSubtitle {
+  opacity: 0;
 }
 .sites {
   margin: auto;
@@ -60,6 +64,14 @@
   width: 100%;
   justify-content: center;
   padding-bottom: 50px;
+}
+.siteTitle {
+  font-family: "hero-new", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  padding: 15px;
 }
 .listItem {
   background-color: white;
@@ -75,6 +87,7 @@
   height: 100%;
   position: absolute;
   padding-top: 2rem;
+  color: white;
 }
 .emailIcon {
   position: inherit;
@@ -84,7 +97,7 @@
   width: 25px
 }
 .navItem {
-  font-family: "hero-new-hairline", sans-serif;
+  font-family: "hero-new", sans-serif;
   font-weight: 100;
   font-style: normal;
   text-transform: lowercase;

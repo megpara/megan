@@ -32,7 +32,7 @@ export default function Home() {
             className={styles.emailIcon}
             href="mailto:meganparadowski@gmail.com"
           >
-            <img src="/email_icon.png" />
+            <img src="/email_icon_white.png" />
           </a>
           <div className={styles.navItem}>
             <a href="/about">About</a>
@@ -42,6 +42,12 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.titleDiv}>
+          <div className={`${styles.title} ${styles.duplicateTitle}`}>
+            Megan Paradowski
+          </div>
+          <div className={`${styles.subtitle} ${styles.duplicateSubtitle}`}>
+            Web developer
+          </div>
           <div className={styles.circle} />
           <div className={styles.title}>Megan Paradowski</div>
           <div className={styles.subtitle}>Web Developer</div>
