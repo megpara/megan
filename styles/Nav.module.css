@@ -14,13 +14,20 @@
   margin-left: 2rem;
   display: inline;
 }
+.navItemBottomContainer {
+  position: inherit;
+  bottom: 2rem;
+}
+.navItemBottom {
+}
 .navItem:hover {
   font-weight: bold;
 }
 .emailIcon {
   position: inherit;
   right: 2rem;
+  bottom: 2rem;
 }
 .emailIcon img {
-  width: 25px;
+  width: 30px;
 }

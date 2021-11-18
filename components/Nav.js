@@ -7,10 +7,15 @@ export default function Nav() {
         <img src="/email_icon.png" />
       </a>
       <div className={styles.navItem}>
-        <a href="/about">About</a>
+        <a href="/about">Web design & development</a>
       </div>
-      <div className={styles.navItem}>
-        <a href="/about">work</a>
+      <div className={styles.navItemBottomContainer}>
+        <div className={`${styles.navItem} ${styles.navItemBottom}`}>
+          <a href="/about">About</a>
+        </div>
+        <div className={`${styles.navItem} ${styles.navItemBottom}`}>
+          <a href="/about">work</a>
+        </div>
       </div>
     </div>
   );
