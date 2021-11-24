@@ -13,21 +13,30 @@
   letter-spacing: 5px;
   margin-left: 2rem;
   display: inline;
+  cursor: default;
 }
-.navItemBottomContainer {
-  position: inherit;
-  bottom: 2rem;
+.navItem sup {
+  font-size: 0.7rem;
 }
-.navItemBottom {
+.nav button {
+  border: none;
+  cursor: pointer;
 }
 .navItem:hover {
   font-weight: bold;
 }
-.emailIcon {
+.navItemRightContainer {
   position: inherit;
+  top: 2rem;
   right: 2rem;
-  bottom: 2rem;
+}
+.navItem a:hover {
+  font-weight: bold;
+}
+.emailIcon {
+  display: block;
+  margin-top: 10px;
 }
 .emailIcon img {
-  width: 30px;
+  width: 25px;
 }

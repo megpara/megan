@@ -1,21 +1,32 @@
 import styles from "../styles/Nav.module.css";
 
-export default function Nav() {
+export default function Nav({ toggle }) {
   return (
     <div className={styles.nav}>
-      <a className={styles.emailIcon} href="mailto:meganparadowski@gmail.com">
+      <div className={styles.navItem}>Web design & development</div>
+      {/* <a
+        className={`${styles.navItem} ${styles.emailIcon}`}
+        href="mailto:meganparadowski@gmail.com"
+      >
         <img src="/email_icon.png" />
-      </a>
-      <div className={styles.navItem}>
-        <a href="/about">Web design & development</a>
-      </div>
-      <div className={styles.navItemBottomContainer}>
-        <div className={`${styles.navItem} ${styles.navItemBottom}`}>
-          <a href="/about">About</a>
-        </div>
-        <div className={`${styles.navItem} ${styles.navItemBottom}`}>
-          <a href="/about">work</a>
-        </div>
+      </a> */}
+      <div className={styles.navItemRightContainer}>
+        <button
+          className={`${styles.navItem} ${styles.navItemBottom} ${styles.button}`}
+          onMouseEnter={toggle}
+          onMouseLeave={toggle}
+        >
+          About
+        </button>
+        <button
+          className={`${styles.navItem}`}
+          onClick={() => {
+            window.scrollTo(0, window.innerHeight);
+          }}
+        >
+          Projects
+          <sup>4</sup>
+        </button>
       </div>
     </div>
   );

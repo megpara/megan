@@ -1,6 +1,7 @@
 .sites {
   margin: auto;
   width: 100%;
+  position: relative;
 }
 .siteList {
   display: flex;
@@ -8,7 +9,6 @@
   width: 100%;
   justify-content: center;
   padding-bottom: 50px;
-  margin-top: 6rem;
 }
 .siteText {
   margin: 15px;
@@ -35,15 +35,16 @@
   width: 100%;
 }
 .linkIcon {
-  width: 30px;
+  width: 40px;
   position: absolute;
-  margin: 25px 0 0 40%;
   display: none;
   z-index: 2;
+  top: 2rem;
+  right: 2rem;
 }
 .listItem:hover .linkIcon {
   display: unset;
 }
 .listItem:hover .thumbnail {
-  filter: brightness(0.7);
+  filter: brightness(0.6);
 }

@@ -6,6 +6,7 @@
 .titleDiv {
   width: 100%;
   height: 100%;
+  cursor: default;
 }
 .absoluteDiv {
   position: absolute;
@@ -32,25 +33,6 @@
   position: relative;
   text-align: center;
   z-index: 2;
-}
-.secondaryTitleContainer {
-  position: inherit;
-  height: 50px;
-  top: 58vh;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-}
-.secondaryTitle {
-  z-index: 1;
-  text-transform: lowercase;
-  font-family: "hero-new-hairline", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 5px;
-  color: white;
 }
 .circle {
   position: inherit;
