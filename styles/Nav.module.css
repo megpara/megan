@@ -2,33 +2,54 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  padding-top: 2rem;
+  padding: 2rem;
 }
 .navItem {
   font-family: "hero-new-hairline", sans-serif;
-  font-weight: 100;
+  font-weight: bold;
   font-style: normal;
   text-transform: lowercase;
-  font-size: 1.1rem;
-  letter-spacing: 5px;
-  margin-left: 2rem;
+  font-size: 15px;
+  letter-spacing: 3px;
   display: inline;
   cursor: default;
 }
+.navItemTitle {
+  font-weight: 300;
+  opacity: 0.8;
+  letter-spacing: 2px;
+  font-size: 14.5px;
+}
+.navItemSubtitle {
+  text-transform: unset;
+  font-size: 12px;
+  font-weight: bold;
+  position: inherit;
+  bottom: 2rem;
+  right: 2rem;
+}
 .navItem sup {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  /* visibility: hidden; */
+}
+.navItemProjects:hover sup {
+    visibility: unset;
 }
 .nav button {
   border: none;
   cursor: pointer;
+  background-color: unset;
 }
-.navItem:hover {
-  font-weight: bold;
+.nav button:hover {
+  /* opacity: 0.8; */
 }
 .navItemRightContainer {
   position: inherit;
   top: 2rem;
   right: 2rem;
+}
+.navItemRightContainer .navItem {
+  margin-left: 2rem;
 }
 .navItem a:hover {
   font-weight: bold;

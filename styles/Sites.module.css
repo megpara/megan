@@ -16,13 +16,24 @@
   font-weight: 100;
   font-style: normal;
   font-size: 0.7rem;
+  display: flex;
+}
+.titleLocation {
+  flex: 0 0 50%;
 }
 .siteTitle {
   font-size: 1rem;
+  font-weight: 300;
 }
 .siteLocation {
   padding-top: 10px;
   text-transform: uppercase;
+}
+.siteDescription {
+  font-size: 0.8rem;
+  text-transform: lowercase;
+  flex: 0 0 50%;
+  text-align: right;
 }
 .listItem {
   background-color: white;
@@ -42,9 +53,9 @@
   top: 2rem;
   right: 2rem;
 }
-.listItem:hover .linkIcon {
-  display: unset;
-}
-.listItem:hover .thumbnail {
+.thumbnail:hover {
   filter: brightness(0.6);
+}
+.thumbnail:hover ~ .linkIcon {
+  display: unset;
 }

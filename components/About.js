@@ -1,11 +1,20 @@
 import styles from "../styles/About.module.css";
+import { motion } from "framer-motion";
 
 export default function About({}) {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeIn", duration: "0.5" }}
+    >
+      <img src="/selfie.jpg" />
       <div className={styles.text}>
-        is a creative web devloper with a background in backend programming.
+        is a web designer & devloper with a background in backend programming.
+        She is also the co-founder of Volta Collective, a Los Angeles based
+        contemporary dance theatre company.
       </div>
-    </div>
+    </motion.div>
   );
 }

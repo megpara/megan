@@ -8,24 +8,28 @@ const sites = [
     title: "Volta Collective",
     link: "https://www.voltacollective.com",
     thumbnail: "/voltacollective.png",
+    description: "Web design & development",
     location: "Los Angeles, CA",
   },
   {
     title: "Gabrielle Johnson Yoga",
     link: "https://www.gabriellejohnsonyoga.com",
     thumbnail: "/gjyoga.png",
+    description: "Web design & development",
     location: "Nashville, TN",
   },
   {
     title: "Media Forge",
     link: "https://www.mediaforgepro.com",
     thumbnail: "/mediaforge.png",
+    description: "Web design & development",
     location: "Los Angeles, CA",
   },
   {
     title: "Catherine Parenteau",
     link: "https://catherineparenteau.com",
     thumbnail: "/catherineparenteau.png",
+    description: "Shopify template development",
     location: "Naples, FL",
   },
 ];
@@ -37,9 +41,10 @@ const Card = ({ site, children }) => {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-    } else if (!inView) {
-      controls.start("hidden");
     }
+    // } else if (!inView) {
+    //   controls.start("hidden");
+    // }
   }, [controls, inView]);
 
   const siteVariants = {
@@ -81,8 +86,11 @@ export default function Sites() {
                 </div>
               </motion.div>
               <div className={styles.siteText}>
-                <div className={styles.siteTitle}>{site.title}</div>
-                <div className={styles.siteLocation}>{site.location}</div>
+                <div className={styles.titleLocation}>
+                  <div className={styles.siteTitle}>{site.title}</div>
+                  <div className={styles.siteLocation}>{site.location}</div>
+                </div>
+                <div className={styles.siteDescription}>{site.description}</div>
               </div>
             </a>
           </Card>
