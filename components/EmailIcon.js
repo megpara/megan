@@ -19,7 +19,7 @@ export default function EmailIcon() {
             id="textCircle"
           />
           <image
-            class="cls-1"
+            className="cls-1"
             width="66"
             height="46"
             transform="translate(32.02 37.47) scale(0.55)"

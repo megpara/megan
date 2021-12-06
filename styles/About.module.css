@@ -12,6 +12,7 @@
   font-size: 1.1rem;
   letter-spacing: 2px;
   display: inline;
+  line-height: 30px;
 }
 .container img {
   position: absolute;

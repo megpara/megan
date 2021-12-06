@@ -73,7 +73,9 @@ export default function Home() {
                 Interested in contemporary dance?
               </div>
               <div className={styles.footerLink}>
-                <a href="http://www.voltacollective.com">voltacollective.com</a>
+                <a target="_blank" href="http://www.voltacollective.com">
+                  voltacollective.com
+                </a>
               </div>
             </div>
           </div>

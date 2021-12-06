@@ -32,6 +32,13 @@ const sites = [
     description: "Shopify template development",
     location: "Naples, FL",
   },
+  {
+    title: "West Coast Climate Crisis",
+    link: "https://www.westcoastclimatecrisis.org/",
+    thumbnail: "/wccc.png",
+    description: "Web design & development in collaboration with Ariel Klevecz",
+    location: "Los Angeles, CA",
+  },
 ];
 
 const Card = ({ site, children }) => {
@@ -47,13 +54,12 @@ const Card = ({ site, children }) => {
   }, [inView]);
 
   const siteVariants = {
-    visible: { opacity: 1, transition: { duration: 0.8 } },
+    visible: { opacity: 1, transition: { duration: 1 } },
     hidden: { opacity: 0 },
   };
 
   return (
     <motion.div
-      key={site.title}
       className={styles.listItem}
       ref={ref}
       initial="hidden"
@@ -69,7 +75,7 @@ export default function Sites() {
     <div className={styles.sites}>
       <div className={styles.siteList}>
         {sites.map((site) => (
-          <Card site={site}>
+          <Card site={site} key={site.title}>
             <a href={site.link} target="_blank">
               <motion.div
                 whileHover={{

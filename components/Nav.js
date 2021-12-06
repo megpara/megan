@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import styles from "../styles/Nav.module.css";
 
 export default function Nav({ toggle }) {
@@ -8,12 +7,6 @@ export default function Nav({ toggle }) {
       <div className={`${styles.navItem} ${styles.navItemSubtitle}`}>
         based in Los Angeles, CA
       </div>
-      {/* <a
-        className={`${styles.navItem} ${styles.emailIcon}`}
-        href="mailto:meganparadowski@gmail.com"
-      >
-        <img src="/email_icon.png" />
-      </a> */}
       <div className={styles.navItemRightContainer}>
         <button className={styles.navItem} onClick={toggle}>
           About
@@ -25,7 +18,7 @@ export default function Nav({ toggle }) {
           }}
         >
           Projects
-          <sup>(4)</sup>
+          <sup>(5)</sup>
         </button>
       </div>
     </div>
