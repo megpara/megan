@@ -7,7 +7,7 @@ export default function About({}) {
       className={styles.container}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: "easeIn", duration: "0.5" }}
+      transition={{ ease: "easeIn", duration: "1.5" }}
     >
       <img src="/selfie.jpg" />
       <div className={styles.text}>

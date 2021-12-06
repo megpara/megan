@@ -41,15 +41,14 @@ const Card = ({ site, children }) => {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
+    } else if (!inView) {
+      controls.start("hidden");
     }
-    // } else if (!inView) {
-    //   controls.start("hidden");
-    // }
-  }, [controls, inView]);
+  }, [inView]);
 
   const siteVariants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, transition: { duration: 0.8 } },
+    hidden: { opacity: 0 },
   };
 
   return (
