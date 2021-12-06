@@ -36,8 +36,16 @@ const sites = [
     title: "West Coast Climate Crisis",
     link: "https://www.westcoastclimatecrisis.org/",
     thumbnail: "/wccc.png",
-    description: "Web design & development in collaboration with Ariel Klevecz",
+    description: "Web design & development in",
+    descriptionCont: "collaboration with Ariel Klevecz",
     location: "Los Angeles, CA",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "",
+    description: "",
+    location: "",
   },
 ];
 
@@ -65,6 +73,7 @@ const Card = ({ site, children }) => {
       initial="hidden"
       animate={controls}
       variants={siteVariants}
+      style={!site.title && { backgroundColor: "#f3f3f5" }}
     >
       {children}
     </motion.div>
@@ -93,9 +102,16 @@ export default function Sites() {
               <div className={styles.siteText}>
                 <div className={styles.titleLocation}>
                   <div className={styles.siteTitle}>{site.title}</div>
-                  <div className={styles.siteLocation}>{site.location}</div>
+                  <div className={styles.siteDescription}>
+                    {site.description}
+                  </div>
+                  {site.descriptionCont && (
+                    <div className={styles.siteDescription}>
+                      {site.descriptionCont}
+                    </div>
+                  )}
                 </div>
-                <div className={styles.siteDescription}>{site.description}</div>
+                <div className={styles.siteLocation}>{site.location}</div>
               </div>
             </a>
           </Card>

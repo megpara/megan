@@ -50,7 +50,7 @@ export default function Home() {
             scrollTo(0, 0);
           }}
         >
-          BACK to TOP
+          Back to top
         </button>
         <div className={styles.footer}>
           <div className={styles.footerColumn}>

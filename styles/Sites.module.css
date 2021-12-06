@@ -19,21 +19,21 @@
   display: flex;
 }
 .titleLocation {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
 }
 .siteTitle {
   font-size: 1rem;
   font-weight: 300;
+  padding-bottom: 10px;
 }
 .siteLocation {
-  padding-top: 10px;
+  flex: 0 0 40%;
+  text-align: right;
   text-transform: uppercase;
 }
 .siteDescription {
   font-size: 0.8rem;
   text-transform: lowercase;
-  flex: 0 0 50%;
-  text-align: right;
   line-height: 20px;
 }
 .listItem {
@@ -49,14 +49,17 @@
 .linkIcon {
   width: 40px;
   position: absolute;
-  display: none;
+  visibility: hidden;
   z-index: 2;
-  top: 2rem;
-  right: 2rem;
+  top: 1.8rem;
+  right: 1.8rem;
 }
 .thumbnail:hover {
   filter: brightness(0.6);
 }
 .thumbnail:hover ~ .linkIcon {
-  display: unset;
+  visibility: visible;
+}
+.linkIcon:hover {
+  visibility: visible;
 }
