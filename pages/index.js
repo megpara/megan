@@ -75,9 +75,6 @@ export default function Home() {
               <div className={styles.footerLink}>
                 <a href="http://www.voltacollective.com">voltacollective.com</a>
               </div>
-              <div className={styles.footerLink}>
-                <a href="http://www.meganparadowski.art">meganparadowski.art</a>
-              </div>
             </div>
           </div>
         </div>
