@@ -79,6 +79,7 @@
   background-color: unset;
   border: none;
   cursor: pointer;
+  color: black;
 }
 .footer {
   background-color: white;
@@ -140,5 +141,8 @@
   .bottomRight {
     text-align: unset;
     padding-top: 10px;
+  }
+  .scroll {
+    font-size: 11px;
   }
 }
