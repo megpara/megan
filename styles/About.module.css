@@ -19,3 +19,15 @@
   width: 200px;
   margin-top: -300px;
 }
+@media (max-width: 720px) {
+  .container {
+    width: 95%;
+  }
+  .container img {
+    width: 150px;
+    margin-top: -275px;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
