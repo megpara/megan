@@ -27,6 +27,7 @@
   position: inherit;
   bottom: 2rem;
   right: 2rem;
+  color: black;
 }
 .navItem sup {
   font-size: 0.8rem;
@@ -59,7 +60,7 @@
   }
   .navItemTitle {
     text-align: center;
-    font-size: 20px;
+    font-size: 20px
   }
   .navItemSubtitle {
     bottom: 1rem;
