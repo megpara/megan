@@ -3,22 +3,22 @@
   height: 100%;
   position: absolute;
   padding: 2rem;
+  color: white;
 }
 .navItem {
   font-family: "hero-new-hairline", sans-serif;
-  font-weight: bold;
   font-style: normal;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-size: 15px;
   letter-spacing: 3px;
   display: inline;
   cursor: default;
+  color: white;
 }
 .navItemTitle {
-  font-weight: 300;
+  letter-spacing: 0.15em;
+  font-size: 16px;
   opacity: 0.8;
-  letter-spacing: 2px;
-  font-size: 14.5px;
 }
 .navItemSubtitle {
   text-transform: unset;
@@ -30,10 +30,9 @@
 }
 .navItem sup {
   font-size: 0.8rem;
-  /* visibility: hidden; */
 }
 .navItemProjects:hover sup {
-    visibility: unset;
+  visibility: unset;
 }
 .nav button {
   border: none;
@@ -46,6 +45,9 @@
   right: 2rem;
 }
 .navItemRightContainer .navItem {
+  font-style: italic;
+  font-family: ivymode, sans-serif;
+  text-transform: lowercase;
   margin-left: 2rem;
 }
 .navItem a:hover {
@@ -57,6 +59,7 @@
   }
   .navItemTitle {
     text-align: center;
+    font-size: 20px;
   }
   .navItemSubtitle {
     bottom: 1rem;
@@ -64,7 +67,7 @@
   }
   .navItemRightContainer {
     left: 0;
-    top: 4rem;
+    top: 7rem;
   }
   .navItemRightContainer .navItem {
     margin-left: 1rem;

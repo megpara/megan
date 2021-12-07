@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Nav from "../components/Nav";
 import styles from "../styles/Home.module.css";
 import Sites from "../components/Sites";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import EmailIcon from "../components/EmailIcon";
 
 export default function Home() {
@@ -27,43 +27,67 @@ export default function Home() {
   return (
     <Layout>
       <main className={styles.main}>
-        <Nav toggle={toggleAbout} />
+        {showScroll && <Nav toggle={toggleAbout} />}
+        <AnimatePresence>
+          {showScroll && (
+            <motion.div
+              className={styles.colorDiv}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ ease: "easeOut", duration: "0.5" }}
+            />
+          )}
+        </AnimatePresence>
         <div className={styles.titleDiv}>
           <div className={styles.absoluteDiv}>
-            {!openAbout && (
-              <motion.div
-                className={styles.circle}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ ease: "easeOut", duration: "2" }}
-              >
-                <div className={styles.circleText}>
-                  <div
-                    className={styles.primaryTitle}
-                    style={{ color: "white" }}
-                  >
-                    Megan Paradowski
+            <AnimatePresence>
+              {!openAbout && (
+                <motion.div
+                  className={styles.circle}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ ease: "easeOut", duration: "2" }}
+                >
+                  <div className={styles.circleText}>
+                    <div
+                      className={styles.primaryTitle}
+                      style={{ color: "white" }}
+                    >
+                      Megan Paradowski
+                    </div>
                   </div>
-                </div>
-                {showScroll && (
-                  <motion.div
-                    className={styles.scroll}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ ease: "easeIn", duration: "0.5" }}
-                  >
-                    SCROLL to EXPLORE
-                  </motion.div>
-                )}
-              </motion.div>
-            )}
+                  <AnimatePresence>
+                    {showScroll && (
+                      <motion.div
+                        className={styles.scroll}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ ease: "easeIn", duration: "0.5" }}
+                      >
+                        SCROLL to EXPLORE
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              )}
+            </AnimatePresence>
             <div className={styles.primaryTitleContainer}>
-              <div className={styles.primaryTitle}>Megan Paradowski</div>
+              {!openAbout && (
+                <div className={styles.primaryTitle}>Megan Paradowski</div>
+              )}
+              {openAbout && (
+                <div className={styles.primaryTitle} style={{ color: "white" }}>
+                  Megan Paradowski
+                </div>
+              )}
               {openAbout && <About />}
             </div>
           </div>
         </div>
-        <EmailIcon />
+        <AnimatePresence>{showScroll && <EmailIcon />}</AnimatePresence>
         <Sites />
         <button
           className={styles.backButton}

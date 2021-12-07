@@ -40,11 +40,11 @@ const sites = [
     location: "Los Angeles, CA",
   },
   {
-    title: "",
-    link: "",
-    thumbnail: "",
-    description: "",
-    location: "",
+    title: "STO Design Group",
+    link: "https://www.stodesign.com/",
+    thumbnail: "/sto.png",
+    description: "Squarespace template development",
+    location: "Tustin, CA",
   },
 ];
 

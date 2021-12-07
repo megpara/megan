@@ -17,8 +17,8 @@ export default function Nav({ toggle }) {
             window.scrollTo(0, window.innerHeight);
           }}
         >
-          Projects
-          <sup>(5)</sup>
+          Featured
+          <sup>(6)</sup>
         </button>
       </div>
     </div>

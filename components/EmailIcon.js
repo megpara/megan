@@ -1,7 +1,15 @@
 import styles from "../styles/EmailIcon.module.css";
+import { motion } from "framer-motion";
+
 export default function EmailIcon() {
   return (
-    <div className={styles.emailIcon}>
+    <motion.div
+      className={styles.emailIcon}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeIn", duration: "0.5" }}
+    >
       <a href="mailto:meganparadowski@gmail.com">
         <svg
           id="Layer_1"
@@ -25,14 +33,27 @@ export default function EmailIcon() {
             transform="translate(32.02 37.47) scale(0.55)"
             xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAuCAYAAACcYs/JAAAACXBIWXMAABRMAAAUTAFGjW/LAAAC/ElEQVRoQ+2Zu2/UQBCHvyWHAAESItBQ8wyiSYNoEBUVPR1lWuhAoqJAgj+Bko6WjpYOCoTE8YhCakABIaEQQsJjKfYc1uOx13vru5x9+aQrbjy7N/vzzOz6bKy1ALeBg0wnq8DdHvAUuBhw7jqzxg5SYsrp94TBqG7dZSsJdlV5TRM7QgyQQsypXt3khP9FCvEG+Ez3+Qgs+QbZLAGO4JpIVxunuktW9Ygubqula5JCyCywwHXazzWKIuTWKg9U2UVNubaWStVasmv9stIwwFtha2OpyJjfU3JDq3rEWeChsLVJDBnrI+Ck5gjlpSGRk74E5jXHCeAZcF7YQuvq1xUC2tE3YmMM9ggNA9wStkkqFRnLfSJuVExG+MgfPYY7rW0HR4EVYYtdR1RG+Mgf+gB80RxHzCeGFyGHdsSuiyGfGbPAX8b3RPuH8IGwNqlBG+CU+D6OvmHJx36OBBEgXQhwT3Ha0fym4pvKAvpR+bXiG8WwzbKM2O0rhlHMndwsy9ACa6JURiFCjqaFABfgY2FLEUOOfULDIkDzpeFjcLuIz37gh+KrsRdYF7YZinOmMLLSyFhAD3iNetlhKYoAbsscRRMeSUZoC10ETgtb6EEoYxk4rvg1GWvhBU8qVU1tH/mysBQXI8cfwGWRdk0bPzRNloYMdJF8oOvoC78MXEI/H6zxHwP0hU+dMqtFE6XRA34JW6gphhZQFcce4Kdi21R8QzTWLJ9TFMEQ3hmqFhq6GRuKzwbuz6KhScmIpg452TwpY31i5knOCBnAHeIC8DGkjb0hbKGyU4nNiHnghbCFxowLKcAF3P+XVWxlRIwQm8BuYZsUETKkGL8pxuwTXRqW/ISN7uENIo/1PWqWSkiIqxQnOkN43HYyQ/EkanGv/cqxefA+92wRWvaRPCi5/mrn3adD7RFy4DLtFQFc7O+ErSCOfOiSDoeAb7SfOdwD3Kpny6216umzzVmg8R23JnUXqRKi1rbTFYy1dgX32myauWIGm8bXkGfHOfwPQxCqhgBnlRYAAAAASUVORK5CYII="
           />
-          <text dy="-13" textLength="310" className={styles.circleText}>
+          {/* <motion.div
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: Infinity }}
+          > */}
+          <motion.text
+            dy="-13"
+            textLength="310"
+            className={styles.circleText}
+            initial={{ rotate: 0 }}
+            animate={{ rotate: 360 }}
+            transition={{ duration: 20, repeat: Infinity }}
+          >
             <textPath xlinkHref="#textCircle">
               Say hello • Say hello • Say hello •
             </textPath>
-          </text>
+          </motion.text>
+          {/* </motion.div> */}
         </svg>
       </a>
-    </div>
+    </motion.div>
   );
 }
 <svg
