@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "../components/About";
 import Layout from "../components/Layout";
 import Nav from "../components/Nav";
@@ -9,9 +9,21 @@ import EmailIcon from "../components/EmailIcon";
 
 export default function Home() {
   const [openAbout, setOpenAbout] = useState(false);
+  const [showScroll, setShowScroll] = useState(true);
   const toggleAbout = () => {
     setOpenAbout(!openAbout);
   };
+  useEffect(() => {
+    function onScroll() {
+      if (window.scrollY == 0) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    }
+    window.addEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <Layout>
       <main className={styles.main}>
@@ -33,7 +45,16 @@ export default function Home() {
                     Megan Paradowski
                   </div>
                 </div>
-                <div className={styles.scroll}>SCROLL to EXPLORE</div>
+                {showScroll && (
+                  <motion.div
+                    className={styles.scroll}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ ease: "easeIn", duration: "0.5" }}
+                  >
+                    SCROLL to EXPLORE
+                  </motion.div>
+                )}
               </motion.div>
             )}
             <div className={styles.primaryTitleContainer}>
