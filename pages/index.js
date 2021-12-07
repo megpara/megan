@@ -67,7 +67,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.footerColumn} />
-          <div className={styles.footerColumn} style={{ textAlign: "center" }}>
+          <div className={styles.footerColumn}>
             <div className={styles.bottomRight}>
               <div className={styles.footerText}>
                 Interested in contemporary dance?

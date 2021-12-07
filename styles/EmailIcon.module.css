@@ -1,13 +1,18 @@
 .emailIcon {
-    position: absolute;
-    width: 150px;
-    bottom: 4rem;
-    left: 4rem;
+  position: absolute;
+  width: 150px;
+  bottom: 4rem;
+  left: 4rem;
 }
 .circleText {
-    letter-spacing: 2px;
-    font-family: 'hero-new', sans-serif;
-    font-size: 0.79rem;
-    text-transform: uppercase;
-    font-weight: 200;
+  letter-spacing: 2px;
+  font-family: "hero-new", sans-serif;
+  font-size: 0.79rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+@media (max-width: 720px) {
+  .emailIcon {
+    left: 0;
+  }
 }

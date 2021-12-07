@@ -35,6 +35,7 @@
   font-size: 0.8rem;
   text-transform: lowercase;
   line-height: 20px;
+  padding-bottom: 10px;
 }
 .listItem {
   background-color: white;
@@ -62,4 +63,12 @@
 }
 .linkIcon:hover {
   visibility: visible;
+}
+@media (max-width: 720px) {
+  .siteList {
+    display: unset;
+  }
+  .listItem {
+    flex: unset;
+  }
 }

@@ -36,8 +36,7 @@ const sites = [
     title: "West Coast Climate Crisis",
     link: "https://www.westcoastclimatecrisis.org/",
     thumbnail: "/wccc.png",
-    description: "Web design & development in",
-    descriptionCont: "collaboration with Ariel Klevecz",
+    description: "Web design & development in collaboration with Ariel Klevecz",
     location: "Los Angeles, CA",
   },
   {
@@ -105,11 +104,6 @@ export default function Sites() {
                   <div className={styles.siteDescription}>
                     {site.description}
                   </div>
-                  {site.descriptionCont && (
-                    <div className={styles.siteDescription}>
-                      {site.descriptionCont}
-                    </div>
-                  )}
                 </div>
                 <div className={styles.siteLocation}>{site.location}</div>
               </div>

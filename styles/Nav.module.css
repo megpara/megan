@@ -61,3 +61,23 @@
 .emailIcon img {
   width: 25px;
 }
+@media (max-width: 720px) {
+  .nav {
+    padding: 1rem;
+  }
+  .navItemTitle {
+    text-align: center;
+  }
+  .navItemSubtitle {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .navItemRightContainer {
+    left: 0;
+    top: 4rem;
+  }
+  .navItemRightContainer .navItem {
+    margin-left: 1rem;
+    display: block;
+  }
+}

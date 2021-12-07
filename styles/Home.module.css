@@ -109,5 +109,36 @@
 .bottomRight {
   text-align: right;
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+  .footer {
+    display: block;
+  }
+  .footerColumn {
+    flex: unset;
+  }
+  .primaryTitleContainer {
+    width: 375px;
+    margin-left: -187.5px;
+  }
+  .circle {
+    width: 275px;
+    height: 275px;
+    margin-left: -137.5px;
+    margin-top: -137.5px;
+  }
+  .circleText {
+    width: 375px;
+    margin-left: -187.5px;
+  }
+  .primaryTitle {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  .footerTitle {
+    font-size: 32px;
+  }
+  .bottomRight {
+    text-align: unset;
+    padding-top: 10px;
+  }
 }
