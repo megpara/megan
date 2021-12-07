@@ -61,8 +61,8 @@ const Card = ({ site, children }) => {
   }, [inView]);
 
   const siteVariants = {
-    visible: { opacity: 1, transition: { duration: 1 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0.9 },
   };
 
   return (
