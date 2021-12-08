@@ -6,7 +6,7 @@ export default function Layout({ children }) {
       <Head>
         <title>Megan Paradowski</title>
         <meta name="description" content="Megan Paradowski" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="preload" href="/flowers2.png" as="image" />
         <link rel="preload" href="/selfie.jpg" as="image" />
         <link rel="stylesheet" href="https://use.typekit.net/djh6oaj.css" />
