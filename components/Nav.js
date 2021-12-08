@@ -3,7 +3,7 @@ import styles from "../styles/Nav.module.css";
 export default function Nav({ toggle }) {
   return (
     <div className={styles.nav}>
-      <div className={styles.navItemTitle}>WEB DESIGN and DEVELOPMENT</div>
+      <div className={styles.navItemTitle}>Web design & development</div>
       <div className={`${styles.navItem} ${styles.navItemSubtitle}`}>
         based in Los Angeles, CA
       </div>

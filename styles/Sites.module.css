@@ -22,9 +22,11 @@
   flex: 0 0 60%;
 }
 .siteTitle {
-  font-size: 1rem;
   font-weight: 300;
   padding-bottom: 10px;
+  font-family: 'hero-new', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .siteLocation {
   flex: 0 0 40%;
