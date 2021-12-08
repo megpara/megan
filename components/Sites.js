@@ -29,7 +29,7 @@ const sites = [
     title: "Catherine Parenteau",
     link: "https://catherineparenteau.com",
     thumbnail: "/catherineparenteau.png",
-    description: "Shopify template development",
+    description: "Shopify development",
     location: "Naples, FL",
   },
   {
@@ -43,7 +43,7 @@ const sites = [
     title: "STO Design Group",
     link: "https://www.stodesign.com/",
     thumbnail: "/sto.png",
-    description: "Squarespace template development",
+    description: "Squarespace development",
     location: "Tustin, CA",
   },
 ];
