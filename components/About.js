@@ -11,7 +11,7 @@ export default function About({}) {
     >
       <img src="/selfie.jpg" />
       <div className={styles.text}>
-        is a web designer & devloper with a background in backend programming.
+        is a web designer & developer with a background in backend programming.
         She is also the co-founder of Volta Collective, a Los Angeles based
         contemporary dance theatre company.
       </div>
