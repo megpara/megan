@@ -9,13 +9,6 @@
   cursor: default;
   overflow: hidden;
 }
-.colorDiv {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #819093;
-  z-index: -1;
-}
 .absoluteDiv {
   position: absolute;
   width: 100%;

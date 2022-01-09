@@ -28,17 +28,6 @@ export default function Home() {
     <Layout>
       <main className={styles.main}>
         {showScroll && <Nav toggle={toggleAbout} />}
-        <AnimatePresence>
-          {showScroll && (
-            <motion.div
-              className={styles.colorDiv}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ ease: "easeOut", duration: "0.5" }}
-            />
-          )}
-        </AnimatePresence>
         <div className={styles.titleDiv}>
           <div className={styles.absoluteDiv}>
             <AnimatePresence>
