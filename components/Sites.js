@@ -48,7 +48,7 @@ const sites = [
   },
   {
     title: "VOLTA Ticketing Platform",
-    link: "https://www.tickets.voltacollective.com/",
+    link: "https://tickets.voltacollective.com/",
     thumbnail: "/tickets.png",
     description: "Web design & development in collaboration with Ariel Klevecz",
     location: "Los Angeles, CA",
