@@ -12,11 +12,11 @@ const sites = [
     location: "Los Angeles, CA",
   },
   {
-    title: "Gabrielle Johnson Yoga",
-    link: "https://www.gabriellejohnsonyoga.com",
-    thumbnail: "/gjyoga.png",
-    description: "Web design & development",
-    location: "Nashville, TN",
+    title: "Catherine Parenteau",
+    link: "https://catherineparenteau.com",
+    thumbnail: "/catherineparenteau.png",
+    description: "Shopify development",
+    location: "Naples, FL",
   },
   {
     title: "Media Forge",
@@ -24,13 +24,6 @@ const sites = [
     thumbnail: "/mediaforge.png",
     description: "Web design & development",
     location: "Los Angeles, CA",
-  },
-  {
-    title: "Catherine Parenteau",
-    link: "https://catherineparenteau.com",
-    thumbnail: "/catherineparenteau.png",
-    description: "Shopify development",
-    location: "Naples, FL",
   },
   {
     title: "West Coast Climate Crisis",
@@ -45,6 +38,27 @@ const sites = [
     thumbnail: "/sto.png",
     description: "Squarespace development",
     location: "Tustin, CA",
+  },
+  {
+    title: "Gabrielle Johnson Yoga",
+    link: "https://www.gabriellejohnsonyoga.com",
+    thumbnail: "/gjyoga.png",
+    description: "Web design & development",
+    location: "Nashville, TN",
+  },
+  {
+    title: "VOLTA Ticketing Platform",
+    link: "https://www.tickets.voltacollective.com/",
+    thumbnail: "/tickets.png",
+    description: "Web design & development in collaboration with Ariel Klevecz",
+    location: "Los Angeles, CA",
+  },
+  {
+    title: "Avery Ellis Interiors",
+    link: "https://www.averyellisinteriors.com/",
+    thumbnail: "/avery.png",
+    description: "Web design & development",
+    location: "College Station, TX",
   },
 ];
 
