@@ -18,7 +18,7 @@ export default function Nav({ toggle }) {
           }}
         >
           Featured
-          <sup>(8)</sup>
+          <sup>(9)</sup>
         </button>
       </div>
     </div>

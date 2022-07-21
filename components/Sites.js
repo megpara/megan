@@ -15,7 +15,7 @@ const sites = [
     title: "Catherine Parenteau",
     link: "https://catherineparenteau.com",
     thumbnail: "/catherineparenteau.png",
-    description: "Shopify development",
+    description: "Shopify design & development",
     location: "Naples, FL",
   },
   {
@@ -36,7 +36,7 @@ const sites = [
     title: "STO Design Group",
     link: "https://www.stodesign.com/",
     thumbnail: "/sto.png",
-    description: "Squarespace development",
+    description: "Squarespace design & development",
     location: "Tustin, CA",
   },
   {
@@ -59,6 +59,20 @@ const sites = [
     thumbnail: "/avery.png",
     description: "Web design & development",
     location: "College Station, TX",
+  },
+  {
+    title: "Acts of Matter",
+    link: "https://www.actsofmatter.com/",
+    thumbnail: "/Actsofmatter.png",
+    description: "Squarespace design & development",
+    location: "Los Angeles, CA",
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: "",
+    description: "",
+    location: "",
   },
 ];
 
