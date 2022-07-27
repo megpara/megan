@@ -5,6 +5,13 @@ import { useEffect } from "react";
 
 const sites = [
   {
+    title: "Gabrielle Johnson Yoga",
+    link: "https://www.gabriellejohnsonyoga.com",
+    thumbnail: "/gjyoga.png",
+    description: "Web design & development",
+    location: "Nashville, TN",
+  },
+  {
     title: "Volta Collective",
     link: "https://www.voltacollective.com",
     thumbnail: "/voltacollective.png",
@@ -26,13 +33,6 @@ const sites = [
     location: "Los Angeles, CA",
   },
   {
-    title: "West Coast Climate Crisis",
-    link: "https://www.westcoastclimatecrisis.org/",
-    thumbnail: "/wccc.png",
-    description: "Web design & development in collaboration with Ariel Klevecz",
-    location: "Los Angeles, CA",
-  },
-  {
     title: "STO Design Group",
     link: "https://www.stodesign.com/",
     thumbnail: "/sto.png",
@@ -40,17 +40,17 @@ const sites = [
     location: "Tustin, CA",
   },
   {
-    title: "Gabrielle Johnson Yoga",
-    link: "https://www.gabriellejohnsonyoga.com",
-    thumbnail: "/gjyoga.png",
-    description: "Web design & development",
-    location: "Nashville, TN",
-  },
-  {
     title: "VOLTA Ticketing Platform",
     link: "https://tickets.voltacollective.com/",
     thumbnail: "/tickets.png",
     description: "Web design & development in collaboration with Ariel Klevecz",
+    location: "Los Angeles, CA",
+  },
+  {
+    title: "Acts of Matter",
+    link: "https://www.actsofmatter.com/",
+    thumbnail: "/Actsofmatter.png",
+    description: "Squarespace design & development",
     location: "Los Angeles, CA",
   },
   {
@@ -61,19 +61,19 @@ const sites = [
     location: "College Station, TX",
   },
   {
-    title: "Acts of Matter",
-    link: "https://www.actsofmatter.com/",
-    thumbnail: "/Actsofmatter.png",
-    description: "Squarespace design & development",
+    title: "West Coast Climate Crisis",
+    link: "https://www.westcoastclimatecrisis.org/",
+    thumbnail: "/wccc.png",
+    description: "Web design & development in collaboration with Ariel Klevecz",
     location: "Los Angeles, CA",
   },
-  {
-    title: "",
-    link: "",
-    thumbnail: "",
-    description: "",
-    location: "",
-  },
+  // {
+  //   title: "",
+  //   link: "",
+  //   thumbnail: "",
+  //   description: "",
+  //   location: "",
+  // },
 ];
 
 const Card = ({ site, children }) => {

@@ -48,6 +48,9 @@
 }
 .thumbnail {
   width: 100%;
+  height: 276px;
+  object-fit: cover;
+  object-position: top;
 }
 .linkIcon {
   width: 40px;
