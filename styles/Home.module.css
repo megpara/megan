@@ -15,12 +15,11 @@
 }
 .primaryTitleContainer {
   position: inherit;
-  width: 1600px;
+  width: 100%;
   top: 50vh;
   height: 200px;
   margin-top: -100px;
-  margin-left: -800px;
-  left: 50%;
+  left: 0;
   z-index: -1;
 }
 .primaryTitle {
@@ -119,10 +118,6 @@
   }
   .footerColumn {
     flex: unset;
-  }
-  .primaryTitleContainer {
-    width: 375px;
-    margin-left: -187.5px;
   }
   .circle {
     width: 275px;
