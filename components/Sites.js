@@ -5,18 +5,11 @@ import { useEffect } from "react";
 
 const sites = [
   {
-    title: "Gabrielle Johnson Yoga",
-    link: "https://www.gabriellejohnsonyoga.com",
-    thumbnail: "/gjyoga.png",
+    title: "Ellis Custom Homes",
+    link: "https://ech-development.vercel.app/",
+    thumbnail: "/keith.png",
     description: "Web design & development",
-    location: "Nashville, TN",
-  },
-  {
-    title: "Volta Collective",
-    link: "https://www.voltacollective.com",
-    thumbnail: "/voltacollective.png",
-    description: "Web design & development",
-    location: "Los Angeles, CA",
+    location: "College Station, TX",
   },
   {
     title: "Catherine Parenteau",
@@ -26,6 +19,13 @@ const sites = [
     location: "Naples, FL",
   },
   {
+    title: "Volta Collective",
+    link: "https://www.voltacollective.com",
+    thumbnail: "/voltacollective.png",
+    description: "Web design & development",
+    location: "Los Angeles, CA",
+  },
+  {
     title: "Media Forge",
     link: "https://www.mediaforgepro.com",
     thumbnail: "/mediaforge.png",
@@ -33,25 +33,11 @@ const sites = [
     location: "Los Angeles, CA",
   },
   {
-    title: "STO Design Group",
-    link: "https://www.stodesign.com/",
-    thumbnail: "/sto.png",
-    description: "Squarespace design & development",
-    location: "Tustin, CA",
-  },
-  {
-    title: "VOLTA Ticketing Platform",
-    link: "https://tickets.voltacollective.com/",
-    thumbnail: "/tickets.png",
-    description: "Web design & development in collaboration with Ariel Klevecz",
-    location: "Los Angeles, CA",
-  },
-  {
-    title: "Acts of Matter",
-    link: "https://www.actsofmatter.com/",
-    thumbnail: "/Actsofmatter.png",
-    description: "Squarespace design & development",
-    location: "Los Angeles, CA",
+    title: "Happy Deals",
+    link: "https://findhappydeals.com/",
+    thumbnail: "/hd.png",
+    description: "Data integration and development",
+    location: "",
   },
   {
     title: "Avery Ellis Interiors",
@@ -61,19 +47,19 @@ const sites = [
     location: "College Station, TX",
   },
   {
-    title: "West Coast Climate Crisis",
-    link: "https://www.westcoastclimatecrisis.org/",
-    thumbnail: "/wccc.png",
-    description: "Web design & development in collaboration with Ariel Klevecz",
+    title: "Performance Events Website",
+    link: "https://mona.vercel.app/",
+    thumbnail: "/mona.png",
+    description: "Web design & development",
     location: "Los Angeles, CA",
   },
-  // {
-  //   title: "",
-  //   link: "",
-  //   thumbnail: "",
-  //   description: "",
-  //   location: "",
-  // },
+  {
+    title: "Gabrielle Johnson Yoga",
+    link: "https://gabrielle-psi.vercel.app/",
+    thumbnail: "/gabrielle.png",
+    description: "Web design & development",
+    location: "Nashville, TN",
+  },
 ];
 
 const Card = ({ site, children }) => {
